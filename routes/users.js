@@ -4,7 +4,7 @@ var router = express.Router();
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
-  res.send(httpGet());
+  res.send(JSON.parse(httpGet()));
 });
 
 function httpGet()
